@@ -57,7 +57,7 @@ public class JFrameTest extends JFrame
 		gbl_contentPane.rowWeights = new double[]{0.0, Double.MIN_VALUE};
 		contentPane.setLayout(gbl_contentPane);
 		
-		btnNewButton = new JButton("New button");
+		btnNewButton = new JButton("버튼");
 		GridBagConstraints gbc_btnNewButton = new GridBagConstraints();
 		gbc_btnNewButton.insets = new Insets(0, 0, 0, 5);
 		gbc_btnNewButton.gridx = 0;
