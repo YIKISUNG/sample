@@ -4,6 +4,7 @@ import java.awt.Dimension;
 import java.awt.EventQueue;
 import java.awt.GridLayout;
 
+import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -33,6 +34,7 @@ public class Clock extends JFrame
 					
 					UIManager.setLookAndFeel("ch.randelshofer.quaqua.QuaquaLookAndFeel");
 					JFrame.setDefaultLookAndFeelDecorated(true);
+					JDialog.setDefaultLookAndFeelDecorated(true);
 					Clock frame = new Clock();
 					frame.setVisible(true);
 				} catch (Exception e)

@@ -1,5 +1,7 @@
 package Clock;
+import java.awt.BorderLayout;
 import java.awt.Dimension;
+import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
@@ -8,10 +10,14 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import javax.swing.JButton;
+import javax.swing.JDialog;
+import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import javax.swing.Timer;
+import javax.swing.UIManager;
+import javax.swing.border.EmptyBorder;
 
 public class ClockTab
 {
@@ -27,6 +33,9 @@ public class ClockTab
 		{
 			public void actionPerformed(ActionEvent arg0)
 			{
+				ClockSetDlg dlg = new ClockSetDlg();
+				dlg.setModal(true);
+				dlg.setVisible(true);
 				
 			}
 		});
@@ -90,4 +99,5 @@ public class ClockTab
 			setText(sdf.format(d));
 		}
 	}
+
 }
